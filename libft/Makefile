@@ -38,8 +38,8 @@ clean:
 	rm -f $(OBJ) $(BOBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME)bonus
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re 
+.PHONY: all bonus clean fclean re
