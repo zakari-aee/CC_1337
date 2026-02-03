@@ -1,9 +1,13 @@
 #include <stddef.h>
 
-void *my_memset(void *ptr, int value, size_t num)
+void    *my_memset(void *ptr, int value, size_t num)
 {
-    unsigned char *p = ptr;
-    size_t i = 0;
+    unsigned char   *p;
+    size_t  i;
+
+    *p = ptr;
+    i = 0;
+    
     while(i < num)
     {
         p[i] = (unsigned char)value;
